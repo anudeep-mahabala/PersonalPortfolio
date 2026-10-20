@@ -33,7 +33,7 @@ const Hero = () => {
           className="w-full h-full object-cover opacity-40"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-background/20 to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-background/20 to-background" />
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(30)].map((_, index) => (
@@ -110,14 +110,14 @@ const Hero = () => {
           </div>
           <div className="relative animate-fade-in animation-delay-700">
             <div className="relative max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse " />
+              <div className="absolute inset-0 bg-linear-to-b from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse " />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
                   src="/profile-pic (1).png"
                   alt="Anudeep"
                   className="w-full h-150 aspect-4/5 object-cover rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-background/20 to-background " />
+                <div className="absolute inset-0 bg-linear-to-b from-background/20 to-background " />
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
