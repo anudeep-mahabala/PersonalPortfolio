@@ -67,11 +67,14 @@ const Navbar = () => {
                 href={link.href}
                 key={index}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
+                onClick={() => setIsMobileOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <Button size={"sm"}>Contact Me</Button>
+            <Button size={"sm"} onClick={() => setIsMobileOpen(false)}>
+              Contact Me
+            </Button>
           </div>
         </div>
       )}
