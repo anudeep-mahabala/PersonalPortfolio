@@ -59,7 +59,7 @@ const Experience = () => {
       <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
       <div className="container mx-auto px-6 relative z-10">
         {/* section header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-secondary-foreground text-sm uppercase font-medium tracking-wider animate-fade-in">
             My Journey
           </span>

@@ -4,7 +4,7 @@ import Contact from "@/section/Contact.jsx";
 import Experience from "@/section/Experience.jsx";
 import Hero from "@/section/Hero.jsx";
 import Projects from "@/section/Projects.jsx";
-import Testimonial from "@/section/Testimonial.jsx";
+import { Footer } from "@/Layout/Footer.jsx";
 
 const App = () => {
   return (
@@ -15,9 +15,9 @@ const App = () => {
         <About />
         <Projects />
         <Experience />
-        <Testimonial />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 };

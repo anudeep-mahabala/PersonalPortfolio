@@ -6,7 +6,6 @@ const navLink = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
 ];
 
 const Navbar = () => {
@@ -48,7 +47,9 @@ const Navbar = () => {
         </div>
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size={"sm"}>Contact Me</Button>
+          <a href="#contact">
+            <Button size={"sm"}>Contact Me</Button>
+          </a>
         </div>
         {/* Mobile Menu Button */}
         <button
@@ -72,9 +73,15 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button size={"sm"} onClick={() => setIsMobileOpen(false)}>
-              Contact Me
-            </Button>
+            <a href="#contact">
+              <Button
+                size={"sm"}
+                className="w-full"
+                onClick={() => setIsMobileOpen(false)}
+              >
+                Contact Me
+              </Button>
+            </a>
           </div>
         </div>
       )}
