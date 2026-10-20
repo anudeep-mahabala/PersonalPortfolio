@@ -1,11 +1,13 @@
 import {
   ArrowUpDown,
+  ArrowUpRight,
   Code2,
   Globe,
   RocketIcon,
   ShieldAlertIcon,
   UserPen,
 } from "lucide-react";
+import { AnimatedBorderButton } from "../components/AnimationBorderButton";
 
 const highlights = [
   {
@@ -48,7 +50,7 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" py-32 relative overflow-hidden>
+    <section id="about" className="mb-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
